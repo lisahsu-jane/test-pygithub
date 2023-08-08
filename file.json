@@ -1,38 +1,22 @@
-{
-    "quiz": {
-        "sport": {
-            "q1": {
-                "question": "Which one is correct team name in NBA?",
-                "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriros",
-                    "Huston Rocket"
-                ],
-                "answer": "Huston Rocket"
-            }
-        },
-        "maths": {
-            "q1": {
-                "question": "5 + 7 = ?",
-                "options": [
-                    "10",
-                    "11",
-                    "12",
-                    "13"
-                ],
-                "answer": "12"
-            },
-            "q2": {
-                "question": "12 - 8 = ?",
-                "options": [
-                    "1",
-                    "2",
-                    "3",
-                    "4"
-                ],
-                "answer": "4"
-            }
-        }
-    }
-}
+ewogICAgInF1aXoiOiB7CiAgICAgICAgInNwb3J0IjogewogICAgICAgICAg
+ICAicTEiOiB7CiAgICAgICAgICAgICAgICAicXVlc3Rpb24iOiAiV2hpY2gg
+b25lIGlzIGNvcnJlY3QgdGVhbSBuYW1lIGluIE5CQT8iLAogICAgICAgICAg
+ICAgICAgIm9wdGlvbnMiOiBbCiAgICAgICAgICAgICAgICAgICAgIk5ldyBZ
+b3JrIEJ1bGxzIiwKICAgICAgICAgICAgICAgICAgICAiTG9zIEFuZ2VsZXMg
+S2luZ3MiLAogICAgICAgICAgICAgICAgICAgICJHb2xkZW4gU3RhdGUgV2Fy
+cmlyb3MiLAogICAgICAgICAgICAgICAgICAgICJIdXN0b24gUm9ja2V0Igog
+ICAgICAgICAgICAgICAgXSwKICAgICAgICAgICAgICAgICJhbnN3ZXIiOiAi
+SHVzdG9uIFJvY2tldCIKICAgICAgICAgICAgfQogICAgICAgIH0sCiAgICAg
+ICAgIm1hdGhzIjogewogICAgICAgICAgICAicTEiOiB7CiAgICAgICAgICAg
+ICAgICAicXVlc3Rpb24iOiAiNSArIDcgPSA/IiwKICAgICAgICAgICAgICAg
+ICJvcHRpb25zIjogWwogICAgICAgICAgICAgICAgICAgICIxMCIsCiAgICAg
+ICAgICAgICAgICAgICAgIjExIiwKICAgICAgICAgICAgICAgICAgICAiMTIi
+LAogICAgICAgICAgICAgICAgICAgICIxMyIKICAgICAgICAgICAgICAgIF0s
+CiAgICAgICAgICAgICAgICAiYW5zd2VyIjogIjEyIgogICAgICAgICAgICB9
+LAogICAgICAgICAgICAicTIiOiB7CiAgICAgICAgICAgICAgICAicXVlc3Rp
+b24iOiAiMTIgLSA4ID0gPyIsCiAgICAgICAgICAgICAgICAib3B0aW9ucyI6
+IFsKICAgICAgICAgICAgICAgICAgICAiMSIsCiAgICAgICAgICAgICAgICAg
+ICAgIjIiLAogICAgICAgICAgICAgICAgICAgICIzIiwKICAgICAgICAgICAg
+ICAgICAgICAiNCIKICAgICAgICAgICAgICAgIF0sCiAgICAgICAgICAgICAg
+ICAiYW5zd2VyIjogIjQiCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9
+Cn0K
