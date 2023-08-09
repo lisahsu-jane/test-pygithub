@@ -6,7 +6,7 @@
                 "options": [
                     "New York Bulls",
                     "Los Angeles Kings",
-		    "production": ["amzn2-ami-ecs-hvm-2.0.20230627-x86_64-ebs"]
+		    "production": ["amzn2-ami-ecs-hvm-2.0.20230731-x86_64-ebs"]
                 ],
                 "answer": "Huston Rocket"
             }
