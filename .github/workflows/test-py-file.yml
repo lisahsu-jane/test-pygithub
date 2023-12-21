@@ -22,10 +22,15 @@ jobs:
     - id: get-pods
       working-directory: .github/scripts
       run: |
-        python find_pods.py ${{ github.workspace }}/sandbox
+        python find_pods.py sandbox
   print_outputs:
     runs-on: ubuntu-latest
     needs: run_python_file
+    strategy:
+      fail-fast: true
+      matrix:
+        module_path: ${{ fromJSON(needs.run_python_file.outputs.module_paths_chunks) }}
     steps:
     - name: print outputs
-      run: echo ${{ needs.run_python_file.outputs.module_paths_chunks }}
+      working-directory: ${{ matrix.module_path }}
+      run: pwd

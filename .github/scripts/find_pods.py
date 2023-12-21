@@ -28,14 +28,15 @@ def get_all_module_paths(root_dir):
             for second_level in first_level.iterdir():
                 rel_path = str(second_level.relative_to(parent_dir))
                 if second_level.is_dir() and (rel_path not in IGNORE_PODS):
-                    all_pods.append(rel_path)
+                    all_pods.append(f"{parent_dir}/{rel_path}")
     return sorted(all_pods)
 
-def update_github_output(name, value):
+def update_github_output_file(name, value):
     with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
         print(f'{name}={value}', file=fh)
 
 
 if __name__ == "__main__":
     all_pods = get_all_module_paths(sys.argv[1])
-    update_github_output("module_paths_chunks", all_pods)
+    # all_pods = ["sandbox/cac1/s-cac1-ex1", "sandbox/cac1/s-cac1-ex2"]
+    update_github_output_file("module_paths_chunks", all_pods)
