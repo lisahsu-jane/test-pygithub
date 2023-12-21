@@ -1,5 +1,6 @@
 from pathlib import Path
 import sys
+import os
 
 IGNORE_PODS = [
     "global/main",
@@ -30,6 +31,11 @@ def get_all_module_paths(root_dir):
                     all_pods.append(rel_path)
     return sorted(all_pods)
 
+def update_github_output(name, value):
+    with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+        print(f'{name}={value}', file=fh)
+
 
 if __name__ == "__main__":
-    print(get_all_module_paths(sys.argv[1]))
+    all_pods = get_all_module_paths(sys.argv[1])
+    update_github_output("module_paths_chunks", all_pods)

@@ -13,15 +13,16 @@ jobs:
   run_python_file:
     runs-on: ubuntu-latest
     outputs:
-      module_paths_chunks: ${{ steps.get-pods.outputs }}
+      module_paths_chunks: ${{ steps.get-pods.outputs.module_paths_chunks }}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
       with:
         python-version: '3.12' 
     - id: get-pods
+      working-directory: .github/scripts
       run: |
-        python ../scripts/find_pods.py
+        python find_pods.py ${{ github.workspace }}/sandbox
   print_outputs:
     runs-on: ubuntu-latest
     needs: run_python_file
